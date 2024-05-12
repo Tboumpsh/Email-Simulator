@@ -5,9 +5,34 @@ let email = document.querySelector("#email"),
   resetBtn = document.querySelector("#resetBtn"),
   form = document.getElementById("email-form");
 
+//* Events initialize
 document.addEventListener("DOMContentLoaded", renderPage);
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-});
 
-function renderPage() {}
+/**
+ * Adds an event listener for the DOMContentLoaded event and calls the renderPage function when the event is triggered.
+ *
+ * @function renderPage
+ * @returns {void}
+ * @memberof document
+ * @global
+ */
+
+function renderPage() {
+  parentMain();
+}
+
+/**
+ * Function to handle the main logic for the parent page.
+ *
+ * @function parentMain
+ * @returns {void}
+ */
+
+function parentMain() {
+  //* Submit event form
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+  });
+}
+
+//* Check inputs value function
