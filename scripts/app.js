@@ -32,7 +32,22 @@ function parentMain() {
   //* Submit event form
   form.addEventListener("submit", (e) => {
     e.preventDefault();
+    checkInput()
   });
 }
 
 //* Check inputs value function
+
+function checkInput(){
+  if( email.value.length > 0){
+    email.setAttribute("class","success")
+    email.style.borderBottomColor = "green"
+
+  }
+
+  else{
+    email.setAttribute("class","error")
+    email.style.borderBottomColor = "red"
+
+  }
+}
