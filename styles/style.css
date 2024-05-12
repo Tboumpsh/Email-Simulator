@@ -36,3 +36,14 @@ form {
 #resetBtn {
     float: right;
 }
+
+.success{
+    border: none;
+    outline: none;
+    border: 2px solid green;
+}
+.error{
+    border: none;
+    outline: none;
+    border: 2px solid green;
+}
